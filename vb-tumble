@@ -1,0 +1,13 @@
+virt-install \
+--name tumbleweed \
+--ram 4096 \
+--disk path=/kvm/img/tmbl.qcow2 \
+--vcpus 2 \
+--os-type linux \
+--os-variant opensusetumbleweed \
+--network bridge=bridge0 \
+--graphics none \
+--serial pty \
+--console pty \
+--boot hd \
+--import
