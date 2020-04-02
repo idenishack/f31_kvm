@@ -1,0 +1,13 @@
+virt-install \
+--name u18 \
+--ram 4096 \
+--disk path=/kvm/img/u18.qcow2 \
+--vcpus 2 \
+--os-type linux \
+--os-variant ubuntu18.04 \
+--network bridge=bridge0 \
+--graphics none \
+--serial pty \
+--console pty \
+--boot hd \
+--import
