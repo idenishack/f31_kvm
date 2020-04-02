@@ -1,0 +1,1 @@
+virt-install --name f31.1 --ram 4096 --disk path=/kvm/img/f31.1.img,size=80 --vcpus 2 --os-type linux --os-variant fedora30 --network bridge=bridge0 --graphics none --console pty,target_type=serial --location '/kvm/iso/Fedora-Server-dvd-x86_64-31-1.9.iso' --extra-args 'console=ttyS0,115200n8 serial'
